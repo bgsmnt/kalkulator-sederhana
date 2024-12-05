@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f27059 0%, #f79d65 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.calculator {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.display-container {
+    margin-bottom: 25px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px 20px;
+    border: none;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.operator {
+    background: #ffd700;
+    color: #333;
+}
+
+.special {
+    background: #ff6b6b;
+    color: white;
+}
+
+.equal {
+    background: #ff69b4;
+    color: white;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    #display {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+/* CSS sebelumnya tetap sama */
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.copyright a:hover {
+    color: #ff69b4;
+    text-decoration: underline;
+}
